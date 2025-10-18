@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('./assets/font/Sk-Modernist-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url('./assets/img/backgroundImage2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sk-Modernist';
+    color: white;
+}
+
+#widgetPage {
+    border-bottom: 1px solid #111 !important;
+}
+
+#topContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 100px 60px;
+}
+
+#titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#titleContainer p {
+    font-size: 24px;
+    color: #999;
+    font-weight: normal;
+}
+
+#titleContainer h3 {
+    font-size: 48px;
+    color: #d8d8d9;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+#webDesignContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.galleryContainer {
+    position: relative;
+    width: calc(33.3%  - 24px);
+    height: 575px;
+    padding: 32px 40px;
+    background-color: rgba(119, 119, 119, 0.24);
+    backdrop-filter: blur(44px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descContainer {
+    position: absolute;
+    bottom: 32px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+.descContainer p {
+    font-size: 16px;
+    color: #999;
+}
+
+.descContainer h4 {
+    font-size: 24px;
+    color: #d8d8d9;
+    font-weight: normal;
+}
