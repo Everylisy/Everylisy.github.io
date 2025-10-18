@@ -41,46 +41,6 @@ body {
     justify-content: space-between;
 }
 
-#headerContainer {
-    width: 100vw;
-    padding: 40px 60px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logoTitle {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 1%;
-    font-family: 'Manrope';
-}
-
-#logoTitle a {
-    color: #d8d8d9;
-}
-
-#navContainer {
-    padding: 16px 32px;
-    background-color: #C4C4C4;
-}
-
-#navList {
-    font-size: 16px;
-    font-weight: normal;
-    display: flex;
-    gap: 40px;
-}
-
-#navList li {
-    border-bottom: transparent solid 1px;
-}
-
-#navList li:hover {
-    border-bottom: #111 solid 1px;
-}
-
 #contentContainer {
     width: 100vw;
     color: #C4C4C4;
