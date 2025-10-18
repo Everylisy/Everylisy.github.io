@@ -43,6 +43,7 @@ body {
 
 #contentContainer {
     width: 100vw;
+    margin-top: 16px;
     color: #C4C4C4;
     font-size: 16px;
     display: flex;
