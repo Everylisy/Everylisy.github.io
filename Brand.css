@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('./assets/font/Sk-Modernist-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vh;
+    height: 3000px;
+    background-image: url('./assets/img/backgroundImage3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sk-Modernist';
+    color: white;
+}
+
+#brandPage {
+    border-bottom: solid 1px #111 !important;
+}
+
+#topContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 60px;
+    gap: 64px;
+}
+
+#titleContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#titleContainer p {
+    font-size: 24px;
+    color: #999;
+    font-weight: normal;
+}
+
+#titleContainer h3 {
+    font-size: 48px;
+    color: #d8d8d9;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+#contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#descContainer {
+    width: 900px;
+    height: auto;
+    margin: 160px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+}
+
+#descContainer p, #package p {
+    color: #ccc;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+    letter-spacing: 1%;
+}
+
+#packageContainer {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+#package {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#package :nth-child(3) {
+    margin-top: 40px;
+}
+
+#package p {
+    margin-top: 24px;
+}
