@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Sk-Modernist';
+    src: url('./assets/font/Sk-Modernist-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    background-image: url('./assets/img/backgroundImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Sk-Modernist';
+    color: white;
+}
+
+#topContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#mePage {
+    border-bottom: #111 solid 1px !important;
+}
+
+#contentContainer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#whoAmIContainer {
+    width: 600px;
+    height: auto;
+    border-radius: 4px;
+    background-color: #111;
+    padding: 38px 34px;
+    font-family: 'Sk-Modernist';
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    position: relative;
+    z-index: 2;
+}
+
+#whoAmIContainer h3 {
+    color: #EFEFEF;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+#pContainer {
+    color: #C4C4C4;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#stackList {
+    display: flex;
+    gap: 16px;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 120%;
+}
+
+#stackList li {
+    width: auto;
+    padding: 4px 12px;
+    background-color: #1B1C1F;
+    border: #333 solid 1px;
+    border-radius: 4px;
+}
+
+#divider {
+    height: 0.5px;
+    border-bottom: #333 1px dashed;
+}
+
+#resumeContainer, #resume {
+    display: flex;
+    flex-direction: column;
+}
+
+#resumeContainer {
+    gap: 32px;
+}
+
+#resume {
+    gap: 8px;
+}
+
+#resume h4 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #EFEFEF;
+}
+
+#resume p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+}
+
+#marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    color: #D8D8D9;
+    line-height: 1.2;
+
+    display: flex;
+    gap: 42px;
+}
+
+#marquee h3 {
+    font-size: 200px;
+    font-weight: normal;
+}
+
+#marqueeYear {
+    font-family: "ivymode";
+    font-weight: normal;
+}
+
+#marquee h3, #marqueeYear {
+    animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
