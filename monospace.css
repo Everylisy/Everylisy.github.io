@@ -108,9 +108,7 @@ body {
     font-family: "Space Mono", monospace;
     color: #D8D8D9;
     line-height: 150%;
-    white-space: nowrap;
     text-align: justify;
-    text-justify: inter-word;
     white-space: initial;
 }
 
