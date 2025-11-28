@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #F9F9F9;
+}
+
+.gnbActive {
+    background-color: #F9F9F9 !important;
+}
+
+.gnbActive a {
+    color: #000 !important;
+}
+
+.HGblack {
+    font-weight: 900;
+}
+
+.HGbold {
+    font-weight: 700;
+}
+
+.HGmedium {
+    font-weight: 500;
+}
+
+.HGregular {
+    font-weight: 400;
+}
+
+.HGlight {
+    font-weight: 300;
+}
+
+#headerContainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 32px 40px 0 40px;
+}
+
+#gnbContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#gnbContainer li {
+    padding: 13px 0px;
+    background-color: rgba(17, 17, 17, 0.24);
+    backdrop-filter: blur(44px);
+    border-radius: 4px;
+}
+
+#gnbContainer li:hover {
+    background-color: #F9F9F9;
+    transition: 0.3s ease;
+}
+
+#gnbContainer li:hover a {
+    color: black;
+    transition: 0.3s ease;
+}
+
+#gnbContainer li a {
+    padding: 13px 20px;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+    #headerContainer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    #gnbContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #mainDesc {
+        font-size: 14px;
+        margin-top: 400px;
+    }
+}
+
+#halogenTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF3C00;
+    color: black;
+    font-size: 146px;
+    font-family: "halogen", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+#halogenWeight {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 200px 0;
+    padding: 0 40px;
+    font-size: 104px;
+    font-family: "halogen", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#halogenImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+#halogenImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#halogenWhy {
+    display: flex;
+    width: 100vw;
+    gap: 180px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 40px;
+}
+
+#halogenWhy img {
+    height: auto;
+    display: block;
+}
+
+#halogenThink {
+    width: auto;
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    white-space: nowrap;
+}
+
+
+
+@media (max-width: 1600px) {
+    #halogenImg {
+        flex-direction: column;
+    }
+
+    #halogenWhy {
+        flex-direction: column;
+        gap: 120px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    #halogenTitle {
+        font-size: 100px;
+    }
+
+    #halogenWeight {
+        font-size: 60px;
+    }
+
+    #halogenWhy img {
+        width: 500px;
+    }
+
+    #halogenThink {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #halogenWeight {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 768px) {
+    #halogenTitle {
+        font-size: 56px;
+    }
+
+    #halogenWeight {
+        font-size: 32px;
+    }
+
+    #halogenWhy {
+        height: 60vh;
+        gap: 60px;
+    }
+
+    #halogenWhy img {
+        width: 300px;
+    }
+
+    #halogenThink {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    #halogenTitle {
+        font-size: 48px;
+    }
+
+    #halogenWeight {
+        font-size: 24px;
+    }
+
+    #halogenWhy img {
+        width: 200px;
+    }
+
+    #halogenThink {
+        font-size: 10px;
+    }
+}
