@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #F9F9F9;
+}
+
+.gnbActive {
+    background-color: #F9F9F9 !important;
+}
+
+.gnbActive a {
+    color: #000 !important;
+}
+
+.asBasic {
+    font-family: 'Aerosoldier Basic PERSONAL USE', sans-serif;
+    text-transform: capitalize;
+}
+
+.asPersonal {
+    font-family: 'Aerosoldier PERSONAL USE', sans-serif;
+    text-transform: uppercase;
+}
+
+.asSpray {
+    font-family: 'Aerosoldier Spray PERSONAL USE', sans-serif;
+    text-transform: uppercase;
+}
+
+.asDrip {
+    font-family: 'Aerosoldier Drip PERSONAL USE', sans-serif;
+    text-transform: capitalize;
+}
+
+.asSpraySymbol {
+    font-family: 'Aerosoldier Spray Symbol PERS', sans-serif;
+}
+
+
+#headerContainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 32px 40px 0 40px;
+}
+
+#gnbContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#gnbContainer li {
+    padding: 13px 0px;
+    background-color: rgba(17, 17, 17, 0.24);
+    backdrop-filter: blur(44px);
+    border-radius: 4px;
+}
+
+#gnbContainer li:hover {
+    background-color: #F9F9F9;
+    transition: 0.3s ease;
+}
+
+#gnbContainer li:hover a {
+    color: black;
+    transition: 0.3s ease;
+}
+
+#gnbContainer li a {
+    padding: 13px 20px;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+    #headerContainer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    #gnbContainer {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #mainDesc {
+        font-size: 14px;
+        margin-top: 400px;
+    }
+}
+
+#asTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D8D8D9;
+    color: black;
+    font-size: 128px;
+    font-family: 'Aerosoldier PERSONAL USE', sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#asWeight {
+    max-width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 200px 0;
+    padding: 0 60px;
+
+    font-size: 96px;
+    font-family: 'Aerosoldier Basic PERSONAL USE', sans-serif;
+    line-height: 150%;
+    white-space: nowrap;
+}
+
+.weightContainer {
+    display: flex;
+    justify-content: space-between;
+    line-height: 150%;
+    letter-spacing: 5px;
+    gap: 40px;
+}
+
+#asImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+#asImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#asWhy {
+    display: flex;
+    width: 100vw;
+    gap: 180px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 40px;
+}
+
+#asWhy img {
+    height: auto;
+    display: block;
+}
+
+#asThink {
+    width: auto;
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    white-space: nowrap;
+}
+
+
+
+@media (max-width: 1600px) {
+    #asImg {
+        flex-direction: column;
+    }
+
+    #asWhy {
+        flex-direction: column;
+        gap: 120px;
+        text-align: center;
+    }
+
+    #asWeight {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #asTitle {
+        font-size: 100px;
+    }
+
+    #asWeight {
+        font-size: 64px;
+    }
+
+    #asWhy img {
+        width: 500px;
+    }
+
+    #asThink {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #asWeight {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    #asTitle {
+        font-size: 56px;
+    }
+
+    #asWeight {
+        font-size: 32px;
+    }
+
+    #asWhy {
+        height: 60vh;
+        gap: 60px;
+    }
+
+    #asWhy img {
+        width: 300px;
+    }
+
+    #asThink {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    #asTitle {
+        font-size: 48px;
+    }
+
+    #asWeight {
+        font-size: 24px;
+        gap: 40px;
+    }
+
+    .weightContainer {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #asWhy img {
+        width: 200px;
+    }
+
+    #asThink {
+        font-size: 10px;
+    }
+}
