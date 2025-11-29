@@ -80,6 +80,44 @@ body {
     letter-spacing: 1px;
 }
 
+#marquee {
+    width: 100vw;
+    padding: 16px 40px 16px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    background: #000;
+    pointer-events: none;
+}
+
+#marquee span {
+    color: #FF3C00;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Clash Display', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: marquee 72s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 @media (max-width: 1000px) {
     #headerContainer {
         flex-direction: column;
@@ -148,7 +186,7 @@ body {
     gap: 180px;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 64px);
     padding: 0 40px;
 }
 
@@ -225,6 +263,10 @@ body {
     #halogenThink {
         font-size: 12px;
     }
+
+    #marquee span {
+        font-size: 24px;
+    }
 }
 
 
@@ -243,5 +285,10 @@ body {
 
     #halogenThink {
         font-size: 10px;
+    }
+
+
+    #marquee span {
+        font-size: 16px;
     }
 }
