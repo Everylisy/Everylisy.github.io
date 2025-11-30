@@ -28,6 +28,7 @@ html, body {
     justify-content: space-between;
     width: 100vw;
     padding: 32px 40px 0 40px;
+    z-index: 2;
 }
 
 #gnbContainer {
