@@ -17,18 +17,6 @@ gsap.from("#halogenWeight h2", {
   ease: "power3.out",
 });
 
-gsap.from("#halogenWeight h3", {
-  scrollTrigger: {
-    trigger: "#halogenWeight",
-    start: "top 60%"
-  },
-  y: 20,
-  duration: 1,
-  opacity: 0,
-  delay: 0.7,
-  ease: "power3.out",
-});
-
 gsap.from("#halogenImg img", {
   scrollTrigger: {
     trigger: "#halogenImg",
